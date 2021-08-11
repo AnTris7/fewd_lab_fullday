@@ -1,30 +1,177 @@
-body {
-  font-family: 'Nunito', Arial, sans-serif;
-  font-size: 12px;
-}
-
-h1, h2, h3, h4, h5, h6 {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*
-banner image
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg
+body {
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 12px;
+  background-color: rgba(184, 184, 184, 0.308);
+}
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px 40px;
+}
 
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg
+nav {
+  margin-top: 10px;
+}
 
-*/
-/**
-For banner over lay add this class to your div
-<div class="banner__container">
-  <div>
-      <!-- content goes here -->
-  </div>
-</div>
-*/
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 13px;
+  margin-left: 10px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg");
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-content {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+  position: relative;
+}
+
+.main-content > h1 {
+  font-size: 4em;
+  align-self: center;
+}
+
+button {
+  background-color: #ff385c;
+  margin-top: 10px;
+  border: none;
+  padding: 8px 28px;
+  border-radius: 5px;
+  color: white;
+  font-family: "Nunito", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: 0px 4px 0px #dd2647;
+}
+
+.flex {
+  display: flex;
+}
+
+.love-hate {
+  background-color: white;
+  border: 1px rgba(173, 173, 173, 0.472) solid;
+}
+
+.love {
+  margin: 45px 20px 45px 10px;
+}
+
+.hate {
+  margin: 45px 10px 45px 20px;
+}
+
+.love-hate > div:first-child {
+  font-weight: bold;
+  background-color: rgba(228, 228, 228, 0.342);
+  padding: 10px 0 10px 20px;
+}
+
+.lh-c > div:last-child {
+  align-self: center;
+}
+
+.lh-c {
+  padding: 20px 8px;
+}
+
+.sec-2 {
+  text-align: center;
+  background-color: white;
+}
+
+.title > h1 {
+  font-size: 30px;
+  padding-top: 50px;
+}
+
+.title > p {
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  width: 95%;
+  margin: 20px auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px;
+  gap: 20px;
+}
+
+[class^="item-"] {
+  background-color: rgba(228, 228, 228, 0.342);
+  border: 1px rgba(173, 173, 173, 0.26) solid;
+}
+
+.sec-2 > button {
+  margin-bottom: 60px;
+}
+
+.pic-1 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg");
+}
+
+.pic-2 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg");
+}
+
+.pic-3 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg");
+}
+
+[class^="pic-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtext {
+  color: white;
+  font-size: 15px;
+  align-self: center;
+  margin: auto;
+  position: relative;
+}
+
+.subtext > h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.image {
+  height: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.desc {
+  padding: 20px 10px 10px 10px;
+}
+
 .banner__container {
   position: relative;
 }
@@ -35,6 +182,22 @@ For banner over lay add this class to your div
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   content: "";
+}
+
+footer {
+  background-color: rgb(48, 48, 48);
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+
+hr {
+  border: 1px rgba(128, 128, 128, 0.384) solid;
+}
+
+footer > p {
+  padding: 30px;
+  font-size: 12px;
 }
