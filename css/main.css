@@ -201,3 +201,120 @@ footer > p {
   padding: 30px;
   font-size: 12px;
 }
+
+/*    mobile phones screen */
+
+@media all and (max-width: 600px) {
+  .sec-1 {
+    flex-direction: column;
+  }
+
+  .love,
+  .hate {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+
+  .love {
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .hate {
+    margin-top: 1%;
+    margin-bottom: 4%;
+  }
+
+  .main {
+    height: 360px;
+  }
+
+  .main-content > h1 {
+    font-size: 5em;
+  }
+
+  .main-content > p {
+    display: none;
+  }
+
+  .main-content > button {
+    font-size: 18px;
+    padding: 2% 8%;
+  }
+
+  .love-hate > div > p {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+  }
+
+  .love-hate > div:first-child {
+    background-color: #ff385c;
+    border-radius: 5px;
+  }
+
+  .love-hate {
+    border-radius: 5px;
+  }
+
+  .lh-c p {
+    font-size: 1.5em;
+  }
+
+  .sec-2 {
+    margin: 2%;
+  }
+
+  .title {
+    background-color: #ff385c;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .title h1 {
+    padding: 2%;
+    font-size: 2.2em;
+  }
+
+  .title p {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 40%);
+    height: 700px;
+    gap: 20px;
+  }
+
+  [class^="pic-"] {
+    height: 100%;
+  }
+  .desc {
+    display: none;
+  }
+
+  .subtext > h3 {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+
+  .subtext > p {
+    font-size: 1em;
+  }
+
+  .sec-2 > button {
+    margin-top: 35%;
+    margin-bottom: 6%;
+    padding: 2% 5%;
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 1px;
+  }
+
+  footer > p {
+    font-size: 15px;
+  }
+}
